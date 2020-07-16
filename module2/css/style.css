@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+.row{
+    width: 100%;
+    margin:10px auto;
+}
+
+.dish-item{
+    position: relative;
+    background-color: rgba(0,124,124,.8);
+    border: 1px solid black;
+    width:30%;
+    margin: 10px 1.66%;
+    padding: 10px;
+    float:left;
+}
+
+.dish-title{
+    position: absolute;
+    top:0;
+    right:0;
+    border: 1px solid red;
+    background-color: #ffdd22;
+    width:100px;
+    text-align:center;
+}
+
+.dish-description{
+    overflow:hidden;
+    margin-top: 20px;
+}
+
+/* responsive design */
+
+/*tablet mode*/
+
+@media(min-width:768px) and (max-width:991px)
+{
+    .dish-item{
+        width:45%;
+        margin: 10px 2.5%;
+    }
+
+    .special{
+        width:95%;
+     
+    }
+}
+
+/*mobile mode*/
+
+@media(max-width:767px)
+{
+    .dish-item{
+        width:95%;
+    }
+}
